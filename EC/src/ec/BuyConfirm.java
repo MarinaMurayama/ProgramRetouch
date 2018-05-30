@@ -39,7 +39,7 @@ public class BuyConfirm extends HttpServlet {
 			BuyDataBeans bdb = new BuyDataBeans();
 			bdb.setUserId((int) session.getAttribute("userId"));
 			bdb.setTotalPrice(totalPrice);
-			bdb.setDelivertMethodId(userSelectDMB.getId());
+			bdb.setDeliveryMethodId(userSelectDMB.getId());
 			bdb.setDeliveryMethodPrice(userSelectDMB.getPrice()); //★★
 			bdb.setDeliveryMethodName(userSelectDMB.getName());  //★★
 
